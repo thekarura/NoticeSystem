@@ -1,0 +1,11 @@
+name: NoticeSystem
+main: com.thekarura.bukkit.plugin.noticesystem.NoticeSystem
+version: 1.0.0
+author: the_karura
+description: Notice
+commands:
+   Notice:
+      description: plugin helps.
+      usage: /<command> (notice | list | help )
+      permission: NoticeSystem.notice
+      permission-message: You don't have <permission>
