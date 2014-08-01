@@ -50,9 +50,7 @@ public class NoticeSystem extends JavaPlugin {
 		
 		pm.registerEvents(playerListener, this);
 		
-		if (listfile.exists()){
-			
-		} else {
+		if (!(listfile.exists())){
 			log.info(logPrefix + "NoticeListファイルを生成します...");
 			try {
 				folder.mkdir();
@@ -65,7 +63,6 @@ public class NoticeSystem extends JavaPlugin {
 			}
 			log.info(logPrefix + "ファイル作成が正常に完了しました。");
 		}
-		
 		log.info(logPrefix + "onEnable has been invoked!");
 		
 	}
